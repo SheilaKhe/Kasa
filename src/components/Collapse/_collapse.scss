@@ -1,0 +1,26 @@
+@import '../../utils/style/style.scss';
+
+.collapse {
+  &__head {
+    border-radius: 10px;
+    background-color: $corail;
+    color: $wh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    &--title {
+    }
+    &--arrow {
+      img {
+        width: 20px;
+      }
+    }
+  }
+  &__text {
+    background-color: $grey;
+  }
+  &__equipments {
+    background-color: $grey;
+  }
+}

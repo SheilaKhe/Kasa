@@ -1,0 +1,18 @@
+@import '../../utils/style/style.scss';
+
+.tags {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  &__item {
+    text-align: center;
+    list-style-type: none;
+    background-color: $corail;
+    color: $wh;
+    padding: 5px;
+    width: 150px;
+    border-radius: 10px;
+    margin-right: 10px;
+  }
+}

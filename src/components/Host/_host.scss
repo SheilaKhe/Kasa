@@ -1,0 +1,10 @@
+@import '../../utils/style/style.scss';
+
+.host {
+  display: flex;
+  align-items: center;
+  &__picture {
+    width: 50px;
+    border-radius: 50px;
+  }
+}
