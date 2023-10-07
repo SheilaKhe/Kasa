@@ -1,0 +1,24 @@
+@import '../../utils/style/style.scss';
+
+.about {
+  .banner {
+    height: 200px;
+  }
+
+  &__infos {
+    padding: 30px 0;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .collapse {
+    &__head {
+      border-radius: 5px;
+    }
+    &__description {
+      background-color: $grey;
+      padding: 25px;
+      color: $corail;
+      border-radius: 0 0 10px 10px;
+    }
+  }
+}

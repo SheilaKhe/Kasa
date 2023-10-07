@@ -4,18 +4,17 @@
   position: relative;
   width: 100%;
   &__previousSlide {
-    width: 60px;
+    width: 100%;
     transform: rotate(-90deg);
     position: absolute;
     left: 5%;
-    top: 43%;
     cursor: pointer;
     width: 30px;
     top: 50%;
   }
 
   &__nextSlide {
-    width: 60px;
+    width: 100%;
     transform: rotate(90deg);
     position: absolute;
     right: 5%;
@@ -27,13 +26,14 @@
 
   &__content {
     display: flex;
-    justify-content: center;
     &__image {
-      width: 93%;
-      height: 350px;
+      width: 100%;
       object-fit: cover;
       border-radius: 20px;
       height: 255px;
+      @include tablette {
+        height: 400px;
+      }
     }
   }
 
@@ -42,7 +42,6 @@
     position: absolute;
     right: 49%;
     bottom: 2%;
-    font-size: 18px;
     font-size: 14px;
   }
 }

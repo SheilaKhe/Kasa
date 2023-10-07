@@ -28,30 +28,34 @@ function Rental() {
     tags,
   } = rental
   return (
-    <div className="rental">
+    <main className="rental">
       <Carousel classname="rental__carrousel" slider={pictures} />
-      <div className="rental__desc">
-        <div className="rental__desc__header">
-          <h1 className="rental__desc__header--title">{title}</h1>
-          <p className="rental__desc__header--loc">{location}</p>
+      <div className="rental__info">
+        <div>
+          <section className="rental__desc">
+            <div className="rental__desc__header">
+              <h1 className="rental__desc__header--title">{title}</h1>
+              <p className="rental__desc__header--loc">{location}</p>
+            </div>
+          </section>
+          <section className="rental__tags">
+            <Tags tags={tags} />
+          </section>
         </div>
+        <section className="rental__features">
+          <div className="rental__features--rating">
+            <Rating rating={rating} />
+          </div>
+          <div className="rental__features--host">
+            <Host host={host} />
+          </div>
+        </section>
       </div>
-      <div className="rental__tags">
-        <Tags tags={tags} />
-      </div>
-      <div className="rental__features">
-        <div className="rental__features--rating">
-          <Rating rating={rating} />
-        </div>
-        <div className="rental__features--host">
-          <Host host={host} />
-        </div>
-      </div>
-      <div className="rental__description">
+      <section className="rental__description">
         <Collapse title="Description" text={description} />
         <Collapse title="Équipements" equipment={equipments} />
-      </div>
-    </div>
+      </section>
+    </main>
   )
 }
 

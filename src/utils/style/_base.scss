@@ -10,14 +10,21 @@ body {
   width: 100%;
   height: 100%;
   margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
 }
 
 main {
   min-width: 100%;
   min-height: 100%;
-  padding: 0 20px;
+  padding: 0 30px;
   &::after {
     content: '';
     display: block;
+  }
+  @include tablette {
+    padding: 0 50px;
+  }
+  @include desktop {
+    padding: 0 70px;
   }
 }

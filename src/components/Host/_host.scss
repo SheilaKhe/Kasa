@@ -3,6 +3,9 @@
 .host {
   display: flex;
   align-items: center;
+  &__name {
+    padding: 0 5px;
+  }
   &__picture {
     width: 50px;
     border-radius: 50px;

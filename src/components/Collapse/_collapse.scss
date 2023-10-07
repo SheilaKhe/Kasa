@@ -1,6 +1,8 @@
 @import '../../utils/style/style.scss';
 
 .collapse {
+  margin-bottom: 30px;
+  width: 100%;
   &__head {
     border-radius: 10px;
     background-color: $corail;
@@ -8,7 +10,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5px;
+    padding: 8px;
     &--title {
     }
     &--arrow {
@@ -19,8 +21,11 @@
   }
   &__text {
     background-color: $grey;
-  }
-  &__equipments {
-    background-color: $grey;
+    padding: 20px;
+    height: 180px;
+    border-radius: 0 0 10px 10px;
+    &--item {
+      list-style-type: none;
+    }
   }
 }

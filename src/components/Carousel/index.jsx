@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import chevron from '../../assets/chevron.jpg'
+import arrowUp from '../../assets/arrow-up.png'
 import './_carousel.scss'
 
 function Carrousel({ slider }) {
@@ -24,13 +24,13 @@ function Carrousel({ slider }) {
         <>
           <img
             className="carrousel__previousSlide"
-            src={chevron}
+            src={arrowUp}
             alt="Précédent"
             onClick={() => Previous()}
           />
           <img
             className="carrousel__nextSlide"
-            src={chevron}
+            src={arrowUp}
             alt="Suivant"
             onClick={() => Next()}
           />

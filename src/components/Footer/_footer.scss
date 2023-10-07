@@ -1,0 +1,18 @@
+@import '../../utils/style/style.scss';
+
+.footer {
+  background-color: $bk;
+  color: $wh;
+  margin-top: 100px;
+  padding: 80px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  &__logo {
+    padding: 10px 0;
+  }
+  &__copy {
+    padding: 10px 0;
+  }
+}
