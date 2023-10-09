@@ -1,12 +1,27 @@
 @import '../../utils/style/style.scss';
 
-.gallery {
-  @include tablette {
-    display: grid;
-    grid-template-columns: repeat(2, 3fr);
-    grid-column-gap: 30px;
+.home {
+  .banner {
+    @include tablette {
+      height: 220px;
+    }
   }
-  @include desktop {
-    grid-template-columns: repeat(3, 3fr);
+  &__gallery {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 20px 0;
+    gap: 20px;
+    @include tablette {
+      @include border-radius;
+      display: grid;
+      grid-template-columns: repeat(2, 3fr);
+      grid-column-gap: 30px;
+      background-color: $grey;
+      justify-items: center;
+      align-items: center;
+      padding: 30px;
+    }
+    @include desktop {
+      grid-template-columns: repeat(3, 3fr);
+    }
   }
 }

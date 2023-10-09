@@ -3,8 +3,8 @@ import arrowUp from '../../assets/arrow-up.png'
 import arrowDown from '../../assets/arrow-down.png'
 import './_collapse.scss'
 
-function Collapse({ title, description, text, equipment, open = true }) {
-  const [isOpen, setIsOpen] = useState(open)
+function Collapse({ title, description, text, equipment }) {
+  const [isOpen, setIsOpen] = useState(false)
 
   return (
     <article className="collapse">

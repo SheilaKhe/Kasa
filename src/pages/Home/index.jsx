@@ -8,9 +8,9 @@ import './_home.scss'
 
 function Home() {
   return (
-    <main>
-      <Banner img={banImg} text="Chez vous, partout et ailleurs" />
-      <section className="gallery">
+    <main className="home">
+      <Banner img={banImg} text={`Chez vous, partout et ailleurs`} />
+      <section className="home__gallery">
         {Rentals.map((rental) => {
           return (
             <Card id={rental.id} cover={rental.cover} title={rental.title} />
