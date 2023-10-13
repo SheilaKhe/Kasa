@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom'
 import './_error.scss'
-import Home from '../Home'
 
 function Error() {
   return (

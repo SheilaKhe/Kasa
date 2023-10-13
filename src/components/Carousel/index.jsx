@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import arrowUp from '../../assets/arrow-up.png'
+import Left from '../../assets/arrow-back.png'
+import Right from '../../assets/arrow-next.png'
 import './_carousel.scss'
 
 function Carrousel({ slider }) {
@@ -19,41 +20,34 @@ function Carrousel({ slider }) {
   }
 
   return (
-    <div className="carrousel">
+    <div className="carousel">
       {slideLength > 1 ? ( // ces éléments apparaissent seulement si le nombre de slide est supérieur à 1
-        <>
+        <div className="carousel__arrows">
           <img
-            className="carrousel__previousSlide"
-            src={arrowUp}
+            className="carousel__previousSlide"
+            src={Left}
             alt="Précédent"
             onClick={() => Previous()}
           />
           <img
-            className="carrousel__nextSlide"
-            src={arrowUp}
+            className="carousel__nextSlide"
+            src={Right}
             alt="Suivant"
             onClick={() => Next()}
           />
-          <p className="carrousel__point">
+          <p className="carousel__point">
             {' '}
             {sliding + 1 + '/' + slider.length}
           </p>
-        </>
+        </div>
       ) : null}
 
       {slider.map((image, index) => {
         return (
-          <div
-            className={
-              index === sliding
-                ? 'carrousel__content'
-                : 'carrousel__content--off'
-            }
-            key={index}
-          >
+          <div className="carousel__content" key={index}>
             {index === sliding && (
               <img
-                className="carrousel__content__image"
+                className="carousel__content__image"
                 src={image}
                 alt="Location"
               />

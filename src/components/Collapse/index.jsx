@@ -8,6 +8,7 @@ function Collapse({ title, description, text, equipment }) {
 
   return (
     <article className="collapse">
+      {/* Changement d'état - ouverture/fermeture au click */}
       <div className="collapse__head" onClick={() => setIsOpen(!isOpen)}>
         <div className="collapse__head--title">{title}</div>
         {isOpen ? (

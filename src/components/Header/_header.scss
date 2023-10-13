@@ -5,11 +5,11 @@
   justify-content: space-between;
   align-items: center;
   padding: 30px;
-  img {
+  &__logo {
     width: 120px;
   }
   &__links {
-    a {
+    &--item {
       padding-left: 20px;
       color: #ff6060;
       text-decoration: none;

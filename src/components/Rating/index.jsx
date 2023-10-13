@@ -3,23 +3,23 @@ import emptyStar from '../../assets/empty-star.svg'
 import fullStar from '../../assets/full-star.svg'
 
 function Rating({ rating }) {
-  const score = [1, 2, 3, 4, 5]
+  const rates = [1, 2, 3, 4, 5]
   return (
     <div className="rating">
-      {score.map((scoring) =>
-        rating >= scoring ? (
+      {rates.map((rate) =>
+        rating >= rate ? (
           <img
             className="rating__star"
-            key={scoring}
+            key={rate}
             src={fullStar}
-            alt="étoile"
+            alt="Étoile"
           />
         ) : (
           <img
             className="rating__star"
-            key={scoring}
+            key={rate}
             src={emptyStar}
-            alt="étoile vide"
+            alt="Étoile vide"
           />
         )
       )}

@@ -11,8 +11,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 8px;
-    &--title {
-    }
+
     &--arrow {
       img {
         width: 20px;
@@ -22,7 +21,7 @@
   &__text {
     background-color: $grey;
     padding: 20px;
-    height: 180px;
+    height: fit-content;
     border-radius: 0 0 10px 10px;
     &--item {
       list-style-type: none;
